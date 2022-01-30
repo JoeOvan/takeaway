@@ -1,0 +1,276 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#FF5D48",
+				"onReachBottomDistance": 100,
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "circle",
+						"color": "#FF5D48"
+					}
+
+				}
+            }
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/mine/article",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+        ,{
+            "path" : "pages/order/order-submit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/add-address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"onReachBottomDistance": 150
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/done",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shop/shop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shop/goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/mine/about-us",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/mine/edit-address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/edit-phone",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/test/model",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+    "tabBar": {
+		"color":"#000000",
+		"selectedColor":"#FF5D48",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+        "list": [{
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "static/icon-food.png",
+                "selectedIconPath": "static/icon-food-active.png"
+            },
+            {
+                "text": "订单",
+                "pagePath": "pages/order/order",
+                "iconPath": "static/icon-order.png",
+                "selectedIconPath": "static/icon-order-active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/mine/mine",
+                "iconPath": "static/icon-mine.png",
+                "selectedIconPath": "static/icon-mine-active.png"
+            }
+        ]
+    },
+	"condition": { //模式配置，仅开发期间生效
+	    "current": 0, //当前激活的模式（list 的索引项）
+	    "list": [
+	        {
+	            "name": "首页", //模式名称
+	            "path" : "pages/index/index",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "订单", //模式名称
+	            "path" : "pages/order/order",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "订单详情", //模式名称
+	            "path" : "pages/order/detail",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "购物车", //模式名称
+	            "path" : "pages/order/order-submit",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "新增地址", //模式名称
+	            "path" : "pages/mine/add-address",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+			{
+			    "name": "关于我们", //模式名称
+			    "path" : "pages/mine/about-us",
+			    "query": "" //启动参数，在页面的onLoad函数里面得到。
+			},
+			{
+			    "name": "文章详情", //模式名称
+			    "path" : "pages/mine/article",
+			    "query": "" //启动参数，在页面的onLoad函数里面得到。
+			},
+	        {
+	            "name": "支付成功", //模式名称
+	            "path" : "pages/order/done",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "商家主页", //模式名称
+	            "path" : "pages/shop/shop",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "商品详情", //模式名称
+	            "path" : "pages/shop/goods",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "我的", //模式名称
+	            "path" : "pages/mine/mine",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "我的收货地址", //模式名称
+	            "path" : "pages/mine/address",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "编辑收货地址", //模式名称
+	            "path" : "pages/mine/edit-address",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "修改手机号码", //模式名称
+	            "path" : "pages/mine/edit-phone",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "搜索", //模式名称
+	            "path" : "pages/search/search",
+	            "query": "" //启动参数，在页面的onLoad函数里面得到。
+	        }
+	    ]
+	}
+}
